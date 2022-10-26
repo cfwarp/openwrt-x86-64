@@ -8,9 +8,16 @@ on:
       - ".github/workflows/build.yml"
 
 env:
-  FIRMWARE_URL: "https://downloads.openwrt.org/releases/19.07.2/targets/x86/64/openwrt-19.07.2-x86-64-generic-rootfs.tar.gz"
-  REPOSITORY: crazygit/openwrt-x86-64
-  TAG: 19.07.2
+  FIRMWARE_URL: "https://downloads.openwrt.org/releases/22.03.2/targets/x86/generic/openwrt-22.03.2-x86-generic-generic-ext4-rootfs.img.gz"
+  #FIRMWARE_URL: "https://downloads.openwrt.org/releases/21.02.3/targets/x86/generic/openwrt-21.02.3-x86-generic-generic-ext4-rootfs.img.gz"
+  #FIRMWARE_URL: "https://downloads.openwrt.org/releases/19.07.2/targets/x86/64/openwrt-19.07.2-x86-64-generic-rootfs.tar.gz"
+  REPOSITORY: tonycn/openwrt-x86
+  TAG: latest
+
+#env:
+#  FIRMWARE_URL: "https://downloads.openwrt.org/releases/19.07.2/targets/x86/64/openwrt-19.07.2-x86-64-generic-rootfs.tar.gz"
+#  REPOSITORY: crazygit/openwrt-x86-64
+#  TAG: 19.07.2
 
 jobs:
   build:
